@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "postcss public/styles.css -o public/style.css"
   },
   "author": "Parth",
   "license": "ISC",
