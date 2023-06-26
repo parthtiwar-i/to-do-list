@@ -115,7 +115,7 @@ app.get("/", async (req, res)=>{
   //   const weatherData = await fetchWeatherData(lati, longi);
   //   console.log(weatherData);
     res.render("index", {
-      Heading:"to do list",
+      Heading:"i love you Sakshi <3",
       currentDate: date,
       quotesRandom: quotes,
       temprature:  weatherData.temp,
