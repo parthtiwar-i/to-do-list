@@ -254,6 +254,7 @@ if(listName === "to do list"){
 .then((data)=>{
   console.log("seccessfully removed item from db");
   res.redirect("/");
+
 })
 .catch((err)=>{
   console.log(err + "error occured");
@@ -283,6 +284,7 @@ else{
 
 
 });
+
 
 app.listen("3000", () => {
   console.log("server is running at port 3000");
