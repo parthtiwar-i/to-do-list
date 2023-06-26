@@ -479,16 +479,35 @@ video {
 .static {
   position: static;
 }
-.m-10 {
-  margin: 2.5rem;
-}
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.ml-8 {
+  margin-left: 2rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -518,21 +537,32 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(245 222 179 / var(--tw-bg-opacity));
 }
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.pl-2 {
+  padding-left: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -562,86 +592,89 @@ video {
 .leading-10 {
   line-height: 2.5rem;
 }
+.text-\[\#2f4f4f\] {
+  --tw-text-opacity: 1;
+  color: rgb(47 79 79 / var(--tw-text-opacity));
+}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-\[1px_1px_40px_20px_\#3c3a3ccc\] {
-  --tw-shadow: 1px 1px 40px 20px #3c3a3ccc;
-  --tw-shadow-colored: 1px 1px 40px 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .outline {
   outline-style: solid;
 }
 
-.smoothBg {
-     background: linear-gradient(305deg,#7e1e7e 20.3%,white 13.3%,white 23.6%,#8a198a 23.6%,#bf40bf 27.3%,white 26.3%,white 30.6%,#7e1e7e 13.3%);
-  }
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #ffffff;
+}
 
-  input:checked + p {
-    text-decoration: line-through;
-    text-decoration-color: #ffffff;
-  }
+input[type="text"] {
+  background: transparent;
+}
 
-  input[type="text"] {
-    background: transparent;
-  }
-
-  input[type="text"]:focus {
-    outline: none;
-    box-shadow: inset 0 -2px 0 0 #7e1e7e;
-  }
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -2px 0 0 #795548;
+}
 
 .items {
   padding-top: 2px;
   padding-bottom: 2px;
-          border-bottom: 1px rgba(0, 0, 0, 0.305) solid;
+        border-bottom: 1px rgba(0, 0, 0, 0.305) solid;
 }
 
-  
-  .smallButton{
-    min-height: 25px;
-    width: 35px;
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: #7e1e7e;
-    color: #fff;
-    font-size: 25px;
-    padding-bottom: 6px;
-    border-width: 0;        
+
+
+.smallButton{
+  min-height: 25px;
+  width: 35px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #795548;
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 6px;
+  border-width: 0;        
+}
+
+@media (min-width: 640px) {
+
+  .sm\:inline {
+    display: inline;
   }
-  @media (min-width: 768px) {
+}
 
+@media (min-width: 768px) {
 
-    .md\:addButton {
-      min-height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      border-color: transparent;
-      background-color: #7e1e7e;
-      color: #fff;
-      font-size: 30px;
-      padding-bottom: 6px;
-      border-width: 0;
-    }
+  .md\:fixed {
+    position: fixed;
+  }
+
+  .md\:top-56 {
+    top: 14rem;
+  }
 
   .md\:mx-\[auto\] {
     margin-left: auto;
     margin-right: auto;
   }
 
+  .md\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
   .md\:w-24 {
     width: 6rem;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:w-\[40\%\] {
@@ -658,6 +691,10 @@ video {
     padding-right: 0.75rem;
   }
 
+  .md\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -672,9 +709,16 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-}
 
-p{
-  display: inline;
-  padding-left: 10px;
+  .md\:addButton {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #795548;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+  }
 }
